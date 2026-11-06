@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.startLogger = startLogger;
+const store_1 = require("./store");
+// const gameManager = new GameManager(); also this gameMangar instance is different so they are not sharing the same instance that's why it nothing prints in the cosole
+function startLogger() {
+    setInterval(() => {
+        console.log(store_1.gameManager.games);
+    }, 5000);
+}
+//# sourceMappingURL=logger.js.map
